@@ -4,26 +4,49 @@
 #
 #    pip-compile
 #
-attrs==20.3.0             # via pytest
-certifi==2020.11.8        # via requests
-chardet==3.0.4            # via requests
-codecov==2.1.10           # via -r requirements.in
-colorama==0.4.4           # via radon
-coverage==5.3             # via codecov, pytest-cov
-future==0.18.2            # via radon
-idna==2.10                # via requests
-importlib-metadata==3.1.0  # via pluggy, pytest
-iniconfig==1.1.1          # via pytest
-mando==0.6.4              # via radon
-packaging==20.7           # via pytest
-pluggy==0.13.1            # via pytest
-py==1.9.0                 # via pytest
-pyparsing==2.4.7          # via packaging
-pytest-cov==2.10.1        # via -r requirements.in
-pytest==6.1.2             # via -r requirements.in, pytest-cov
-radon==4.3.2              # via -r requirements.in
-requests==2.25.0          # via codecov
-six==1.15.0               # via mando
-toml==0.10.2              # via pytest
-urllib3==1.26.2           # via requests
-zipp==3.4.0               # via importlib-metadata
+attrs==20.3.0
+    # via pytest
+certifi==2020.11.8
+    # via requests
+chardet==3.0.4
+    # via requests
+codecov==2.1.10
+    # via -r requirements.in
+colorama==0.4.4
+    # via radon
+coverage==5.3
+    # via
+    #   codecov
+    #   pytest-cov
+future==0.18.2
+    # via radon
+idna==2.10
+    # via requests
+iniconfig==1.1.1
+    # via pytest
+mando==0.6.4
+    # via radon
+packaging==20.7
+    # via pytest
+pluggy==0.13.1
+    # via pytest
+py==1.9.0
+    # via pytest
+pyparsing==2.4.7
+    # via packaging
+pytest-cov==2.10.1
+    # via -r requirements.in
+pytest==6.1.2
+    # via
+    #   -r requirements.in
+    #   pytest-cov
+radon==4.3.2
+    # via -r requirements.in
+requests==2.25.0
+    # via codecov
+six==1.15.0
+    # via mando
+toml==0.10.2
+    # via pytest
+urllib3==1.26.4
+    # via requests
