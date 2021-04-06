@@ -4,85 +4,241 @@
 #
 #    pip-compile
 #
-amqp==2.6.1               # via kombu
-anymarkup-core==0.8.1     # via anymarkup
-anymarkup==0.8.1          # via f8a-worker
-apscheduler==3.6.3        # via -r requirements.in
-beautifulsoup4==4.9.3     # via -r requirements.in, bs4, f8a-worker
-billiard==3.6.3.0         # via celery
-blinker==1.4              # via raven
-boto3==1.16.25            # via -r requirements.in, f8a-worker
-botocore==1.19.25         # via -r requirements.in, boto3, f8a-worker, s3transfer
-bs4==0.0.1                # via f8a-utils
-celery==4.4.7             # via f8a-worker, selinon
-certifi==2020.11.8        # via requests
-cffi==1.14.4              # via cryptography
-chardet==3.0.4            # via requests
-click==7.1.2              # via anymarkup, clickclick, flask, json2sql, selinon
-clickclick==20.10.2       # via connexion
-codegen==1.0              # via selinon
-colorama==0.4.4           # via rainbow-logging-handler
-configobj==5.0.6          # via anymarkup
-connexion[swagger-ui]==2.7.0  # via -r requirements.in
-cryptography==3.2.1       # via f8a-utils
-daiquiri==3.0.0           # via json2sql
-git+https://github.com/fabric8-analytics/fabric8-analytics-utils.git@95ebbf2#egg=f8a_utils  # via f8a-worker
-git+https://github.com/fabric8-analytics/fabric8-analytics-version-comparator.git@8a57ac7#egg=f8a_version_comparator  # via f8a-utils
-git+https://github.com/fabric8-analytics/fabric8-analytics-worker.git@cf7b8a7#egg=f8a_worker  # via -r requirements.in
-flask-oauthlib==0.9.4     # via -r requirements.in
-flask-script==2.0.6       # via -r requirements.in
-flask==1.1.2              # via -r requirements.in, connexion, flask-oauthlib, flask-script, raven
-git2json==0.2.3           # via f8a-worker
-gitdb==4.0.5              # via gitpython
-gitpython==3.1.11         # via f8a-worker
-graphviz==0.15            # via selinon
-idna==2.10                # via requests
-importlib-metadata==3.1.0  # via kombu
-inflection==0.5.1         # via connexion
-itsdangerous==1.1.0       # via flask
-jinja2==2.11.2            # via flask, swagger-ui-bundle
-jmespath==0.10.0          # via boto3, botocore
-jsl==0.2.4                # via f8a-worker
-json2sql==1.0.0rc1        # via -r requirements.in
-json5==0.9.5              # via anymarkup
-jsonschema==2.6.0         # via -r requirements.in, connexion, f8a-worker, openapi-spec-validator, selinon
-kombu==4.6.11             # via celery
-logutils==0.3.5           # via rainbow-logging-handler
-lxml==4.6.2               # via f8a-utils, f8a-worker
-markupsafe==1.1.1         # via jinja2
-mosql==0.12.3             # via json2sql
-oauthlib==2.1.0           # via flask-oauthlib, requests-oauthlib
-openapi-spec-validator==0.2.9  # via connexion
-psycopg2-binary==2.8.6    # via -r requirements.in
-pycparser==2.20           # via cffi
-python-dateutil==2.8.1    # via -r requirements.in, botocore
-python-json-logger==2.0.1  # via daiquiri
-pytimeparse==1.1.8        # via -r requirements.in
-pytz==2020.4              # via apscheduler, celery, tzlocal
-pyyaml==5.3.1             # via -r requirements.in, anymarkup, clickclick, connexion, f8a-worker, json2sql, openapi-spec-validator, selinon
-rainbow-logging-handler==2.2.2  # via selinon
-raven[flask]==6.10.0      # via -r requirements.in, f8a-worker
-requests-futures==1.0.0   # via f8a-utils, f8a-worker
-requests-oauthlib==1.1.0  # via -r requirements.in, flask-oauthlib
-requests==2.25.0          # via -r requirements.in, connexion, f8a-utils, f8a-worker, requests-futures, requests-oauthlib
-s3transfer==0.3.3         # via boto3
-selinon[celery]==1.0.0    # via -r requirements.in, f8a-worker
-semantic-version==2.8.5   # via f8a-worker
-semver==2.13.0            # via f8a-utils
-six==1.15.0               # via anymarkup-core, apscheduler, configobj, cryptography, openapi-spec-validator, python-dateutil, tenacity
-smmap==3.0.4              # via gitdb
-soupsieve==2.0.1          # via beautifulsoup4
-sqlalchemy==1.3.20        # via -r requirements.in, f8a-worker
-swagger-ui-bundle==0.0.8  # via connexion
-tenacity==6.2.0           # via f8a-utils, f8a-worker
-toml==0.9.4               # via anymarkup, f8a-worker
-tzlocal==2.1              # via apscheduler
-urllib3==1.26.2           # via botocore, requests
-uwsgi==2.0.19.1           # via -r requirements.in
-vine==1.3.0               # via amqp, celery
-werkzeug==0.16.1          # via -r requirements.in, f8a-worker, flask
-xmltodict==0.12.0         # via anymarkup
-zipp==3.4.0               # via importlib-metadata
+amqp==2.6.1
+    # via kombu
+anymarkup-core==0.8.1
+    # via anymarkup
+anymarkup==0.8.1
+    # via f8a-worker
+apscheduler==3.6.3
+    # via -r requirements.in
+beautifulsoup4==4.9.3
+    # via
+    #   -r requirements.in
+    #   bs4
+    #   f8a-worker
+billiard==3.6.3.0
+    # via celery
+blinker==1.4
+    # via raven
+boto3==1.16.25
+    # via
+    #   -r requirements.in
+    #   f8a-worker
+botocore==1.19.25
+    # via
+    #   -r requirements.in
+    #   boto3
+    #   f8a-worker
+    #   s3transfer
+bs4==0.0.1
+    # via f8a-utils
+celery==4.4.7
+    # via
+    #   f8a-worker
+    #   selinon
+certifi==2020.11.8
+    # via requests
+cffi==1.14.4
+    # via cryptography
+chardet==3.0.4
+    # via requests
+click==7.1.2
+    # via
+    #   anymarkup
+    #   clickclick
+    #   flask
+    #   json2sql
+    #   selinon
+clickclick==20.10.2
+    # via connexion
+codegen==1.0
+    # via selinon
+colorama==0.4.4
+    # via rainbow-logging-handler
+configobj==5.0.6
+    # via anymarkup
+connexion[swagger-ui]==2.7.0
+    # via -r requirements.in
+cryptography==3.2.1
+    # via f8a-utils
+daiquiri==3.0.0
+    # via json2sql
+git+https://github.com/fabric8-analytics/fabric8-analytics-utils.git@95ebbf2#egg=f8a_utils
+    # via f8a-worker
+git+https://github.com/fabric8-analytics/fabric8-analytics-version-comparator.git@8a57ac7#egg=f8a_version_comparator
+    # via f8a-utils
+git+https://github.com/fabric8-analytics/fabric8-analytics-worker.git@cf7b8a7#egg=f8a_worker
+    # via -r requirements.in
+flask-oauthlib==0.9.4
+    # via -r requirements.in
+flask-script==2.0.6
+    # via -r requirements.in
+flask==1.1.2
+    # via
+    #   -r requirements.in
+    #   connexion
+    #   flask-oauthlib
+    #   flask-script
+    #   raven
+git2json==0.2.3
+    # via f8a-worker
+gitdb==4.0.5
+    # via gitpython
+gitpython==3.1.11
+    # via f8a-worker
+graphviz==0.15
+    # via selinon
+idna==2.10
+    # via requests
+inflection==0.5.1
+    # via connexion
+itsdangerous==1.1.0
+    # via flask
+jinja2==2.11.2
+    # via
+    #   flask
+    #   swagger-ui-bundle
+jmespath==0.10.0
+    # via
+    #   boto3
+    #   botocore
+jsl==0.2.4
+    # via f8a-worker
+json2sql==1.0.0rc1
+    # via -r requirements.in
+json5==0.9.5
+    # via anymarkup
+jsonschema==2.6.0
+    # via
+    #   -r requirements.in
+    #   connexion
+    #   f8a-worker
+    #   openapi-spec-validator
+    #   selinon
+kombu==4.6.11
+    # via celery
+logutils==0.3.5
+    # via rainbow-logging-handler
+lxml==4.6.2
+    # via
+    #   f8a-utils
+    #   f8a-worker
+markupsafe==1.1.1
+    # via jinja2
+mosql==0.12.3
+    # via json2sql
+oauthlib==2.1.0
+    # via
+    #   flask-oauthlib
+    #   requests-oauthlib
+openapi-spec-validator==0.2.9
+    # via connexion
+psycopg2-binary==2.8.6
+    # via -r requirements.in
+pycparser==2.20
+    # via cffi
+python-dateutil==2.8.1
+    # via
+    #   -r requirements.in
+    #   botocore
+python-json-logger==2.0.1
+    # via daiquiri
+pytimeparse==1.1.8
+    # via -r requirements.in
+pytz==2020.4
+    # via
+    #   apscheduler
+    #   celery
+    #   tzlocal
+pyyaml==5.3.1
+    # via
+    #   -r requirements.in
+    #   anymarkup
+    #   clickclick
+    #   connexion
+    #   f8a-worker
+    #   json2sql
+    #   openapi-spec-validator
+    #   selinon
+rainbow-logging-handler==2.2.2
+    # via selinon
+raven[flask]==6.10.0
+    # via
+    #   -r requirements.in
+    #   f8a-worker
+requests-futures==1.0.0
+    # via
+    #   f8a-utils
+    #   f8a-worker
+requests-oauthlib==1.1.0
+    # via
+    #   -r requirements.in
+    #   flask-oauthlib
+requests==2.25.0
+    # via
+    #   -r requirements.in
+    #   connexion
+    #   f8a-utils
+    #   f8a-worker
+    #   requests-futures
+    #   requests-oauthlib
+s3transfer==0.3.3
+    # via boto3
+selinon[celery]==1.0.0
+    # via
+    #   -r requirements.in
+    #   f8a-worker
+semantic-version==2.8.5
+    # via f8a-worker
+semver==2.13.0
+    # via f8a-utils
+six==1.15.0
+    # via
+    #   anymarkup-core
+    #   apscheduler
+    #   configobj
+    #   cryptography
+    #   openapi-spec-validator
+    #   python-dateutil
+    #   tenacity
+smmap==3.0.4
+    # via gitdb
+soupsieve==2.0.1
+    # via beautifulsoup4
+sqlalchemy==1.3.20
+    # via
+    #   -r requirements.in
+    #   f8a-worker
+swagger-ui-bundle==0.0.8
+    # via connexion
+tenacity==6.2.0
+    # via
+    #   f8a-utils
+    #   f8a-worker
+toml==0.9.4
+    # via
+    #   anymarkup
+    #   f8a-worker
+tzlocal==2.1
+    # via apscheduler
+urllib3==1.26.4
+    # via
+    #   botocore
+    #   requests
+uwsgi==2.0.19.1
+    # via -r requirements.in
+vine==1.3.0
+    # via
+    #   amqp
+    #   celery
+werkzeug==0.16.1
+    # via
+    #   -r requirements.in
+    #   f8a-worker
+    #   flask
+xmltodict==0.12.0
+    # via anymarkup
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
